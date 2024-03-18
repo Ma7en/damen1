@@ -41,3 +41,11 @@ firebase login
 firebase init
 
 firebase deploy
+
+# name:- Damen-1
+
+vercel
+https://damen1.vercel.app/
+
+netlify
+https://damen1.netlify.app/

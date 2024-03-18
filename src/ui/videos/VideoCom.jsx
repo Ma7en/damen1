@@ -12,14 +12,14 @@ const StyledVideo = styled.div`
     // border-top: var(--border);
     // border-bottom: var(--border);
     box-shadow: var(--box-shadow);
-    background-color: var(--green);
+    background-color: var(--majorelle-blue);
     video {
         width: 100%;
         // max-height: 400px;
     }
 `;
 
-function Video({ src, track }) {
+function VideoCom({ src, track }) {
     return (
         <>
             <StyledVideo>
@@ -37,4 +37,4 @@ function Video({ src, track }) {
     );
 }
 
-export default Video;
+export default VideoCom;

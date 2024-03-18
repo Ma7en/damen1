@@ -17,11 +17,7 @@ import {
 } from "react-icons/tb";
 
 function ContactCom() {
-    // const { title, summary } = aboutusVar;
     // const { isLoading, aboutus } = useAboutUs();
-
-    // // console.log(`a`, aboutus[0].image);
-    // // console.log(`a===`, aboutus);
 
     // if (isLoading) return <Spinner />;
     // if (!aboutus) return <Empty resourceName="aboutus" />;
@@ -94,13 +90,29 @@ function ContactCom() {
                                     rel="noreferrer"
                                 >
                                     <TbMail />
-                                    <span>: support@website.com</span>
+                                    <span>: Support@Damen.com</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="" className="contact-link">
+                                <a
+                                    href="https://damen1.vercel.app/"
+                                    className="contact-link"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     <TbWorld />
-                                    <span>: www.website.com</span>
+                                    <span>: https://damen1.vercel.app/</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://damen1.netlify.app/"
+                                    className="contact-link"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <TbWorld />
+                                    <span>: https://damen1.netlify.app/</span>
                                 </a>
                             </li>
                             <li>
@@ -111,7 +123,6 @@ function ContactCom() {
                                     rel="noreferrer"
                                 >
                                     <TbPhone />
-                                    {/* <span>: (+001) 123 456 7890</span> */}
                                     <span>: 15159</span>
                                 </a>
                             </li>

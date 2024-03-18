@@ -208,6 +208,12 @@ const GlobalStyles = createGlobalStyle`
     // 
     --main-transition: all .5s; */
 
+
+    //shadow
+    --box-shadow: 0.5rem 0.5rem 0 hsl(245, 16%, 16%);
+
+     // border
+     --border: 0.2rem solid var(--green);
 }
 
 /* start worldwise */

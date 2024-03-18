@@ -341,9 +341,11 @@ body {
 \*-----------------------------------*/
 
 .hero {
-    padding: 125px 0 var(--section-padding);
     background: var(--ghost-white-1);
     .container {
+        padding: 125px 0 var(--section-padding);
+        min-height: 100vh;
+
         .hero-content {
             margin-bottom: 80px;
             .hero-title {
@@ -566,8 +568,8 @@ body {
 \*-----------------------------------*/
 
 .reviews {
-    padding: 5rem 9%;
-    .slide-container {
+    // padding: 5rem 9%;
+    .container {
         position: relative;
         padding: 0px 5rem;
         display: flex;
@@ -578,14 +580,14 @@ body {
             margin: 1rem auto;
             display: none;
 
+            // &:nth-of-type(1),
             &.active {
-                display: block;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 gap: 2rem;
                 text-align: left;
-                @media (max-width: 767px) {
+                @media (max-width: 991px) {
                     flex-direction: column;
                     text-align: center;
                 }
@@ -604,10 +606,26 @@ body {
             .text {
                 P {
                     padding: 1.5rem 0;
-                    font-size: 1.6rem;
+                    font-size: 1.2rem;
                     line-height: 2;
                     font-weight: normal;
                     animation: fadeUp 0.2s linear 0.4s backwards;
+                }
+
+                @-webkit-keyframes fadeUp {
+                    0% {
+                        opacity: 0;
+                        -webkit-transform: translateY(4rem);
+                        transform: translateY(4rem);
+                    }
+                }
+
+                @keyframes fadeUp {
+                    0% {
+                        opacity: 0;
+                        -webkit-transform: translateY(4rem);
+                        transform: translateY(4rem);
+                    }
                 }
 
                 h3 {
@@ -656,6 +674,59 @@ body {
 @media (max-width: 1200px) {
     section.reviews {
         padding: 3rem 2rem;
+    }
+}
+
+/*-----------------------------------*\
+  #Videos
+\*-----------------------------------*/
+
+.videos {
+    padding-block: var(--section-padding);
+    .container {
+        .section-title {
+            margin-bottom: 20px;
+        }
+        .section-text {
+            margin-bottom: 40px;
+            @media (min-width: 992px) {
+                margin-bottom: 50px;
+            }
+        }
+
+        .videos-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            gap: 30px;
+            li {
+                .video-card {
+                    div {
+                        position: relative;
+                        width: 100%; /* تعيين العرض بنسبة مئوية */
+                        padding-bottom: 56.25%; /* نسبة الارتفاع بالنسبة للعرض (16:9) */
+
+                        video {
+                            width: 100%;
+                            max-width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 8px; /* تدوير حواف الفيديو */
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* إضافة ظل للفيديو */
+                        }
+                    }
+                }
+            }
+            // @media (min-width: 992px) {
+            //     grid-template-columns: repeat(3, 1fr);
+            // }
+        }
     }
 }
 

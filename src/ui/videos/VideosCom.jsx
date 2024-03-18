@@ -8,18 +8,43 @@
 // import Picture from "../pictures/Picture";
 // import Empty from "../error/Empty";
 
-function VideosCom() {
-    // const { title, summary } = aboutusVar;
-    // const { isLoading, aboutus } = useAboutUs();
+import { Videos } from "../../utils/vars";
+import VideoCom from "./VideoCom";
 
-    // // console.log(`a`, aboutus[0].image);
-    // // console.log(`a===`, aboutus);
+function VideosCom() {
+    // const { isLoading, aboutus } = useAboutUs();
 
     // if (isLoading) return <Spinner />;
     // if (!aboutus) return <Empty resourceName="aboutus" />;
 
     return (
         <>
+            <section className="videos" id="videos">
+                <div className="container">
+                    <h2 className="h2 section-title">Latest videos</h2>
+                    <p className="section-text">
+                        Et harum quidem rerum facilis est et expedita distinctio
+                        nam libero tempore cum soluta nobis eligendi cumque.
+                    </p>
+
+                    <ul className="videos-list">
+                        {Videos.map((video) => (
+                            <li key={video.id}>
+                                <div className="video-card">
+                                    <VideoCom
+                                        src={
+                                            video.url ||
+                                            video.src ||
+                                            "/vidoes/neurorons.mp4"
+                                        }
+                                    />
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
+
             {/* <section className="about" id="about">
                 <div className="container">
                     <Heading as="h2">
