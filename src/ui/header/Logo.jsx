@@ -29,10 +29,7 @@ function Logo() {
     return (
         <>
             <StyledLogo to="/home" className="logo">
-                <img
-                    src="/public/images/logo/logo-light.png"
-                    alt="Damen logo"
-                />
+                <img src="/images/logo/logo-light.png" alt="Damen logo" />
             </StyledLogo>
 
             {/* <StyledLogo to="/home" className="logo">
