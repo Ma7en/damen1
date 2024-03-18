@@ -2,10 +2,10 @@
 
 # From
 
-=151
-=158
+=c151
+=c158
 
-# Aouther
+# Auther
 
 Main project mazen saad
 vite
@@ -42,10 +42,10 @@ firebase init
 
 firebase deploy
 
-# name:- Damen-1
+# Name:- Damen-1
 
-vercel
+Vercel
 https://damen1.vercel.app/
 
-netlify
+Netlify
 https://damen1.netlify.app/

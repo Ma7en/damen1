@@ -4,8 +4,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Toaster } from "react-hot-toast";
 
-// import MessengerCustomerChat from "react-messenger-customer-chat";
-
 import { DarkModeProvider } from "./contexts/DarkModeContext";
 
 import { App_Url } from "./utils/constants";
@@ -32,6 +30,7 @@ import PageNotFound from "./pages/global/PageNotFound";
 import AboutUs from "./pages/global/AboutUs";
 import Services from "./pages/global/services/Services";
 import Service from "./pages/global/services/Service";
+import FacebookMsg from "./ui/plugin/FacebookMsg";
 
 const queryClient = new QueryClient({
     defaultOptions: {
@@ -109,16 +108,7 @@ function App() {
                         </Routes>
                     </BrowserRouter>
 
-                    {/* 
-                    page ID = رابط الصفحة 
-                    app ID = بتعمل تطبيق من خلال 
-                    = facebook for devloper 
-                    = تحط رابط الطبيق 
-                    */}
-                    {/* <MessengerCustomerChat
-                        pageId="100000686899395"
-                        appId="165846530867056"
-                    /> */}
+                    <FacebookMsg />
 
                     <Toaster
                         position="top-center"
