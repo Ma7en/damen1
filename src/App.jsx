@@ -30,7 +30,7 @@ import PageNotFound from "./pages/global/PageNotFound";
 import AboutUs from "./pages/global/AboutUs";
 import Services from "./pages/global/services/Services";
 import Service from "./pages/global/services/Service";
-import FacebookMsg from "./ui/plugin/FacebookMsg";
+// import FacebookMsg from "./ui/plugin/FacebookMsg";
 
 const queryClient = new QueryClient({
     defaultOptions: {
@@ -108,7 +108,7 @@ function App() {
                         </Routes>
                     </BrowserRouter>
 
-                    <FacebookMsg />
+                    {/* <FacebookMsg /> */}
 
                     <Toaster
                         position="top-center"

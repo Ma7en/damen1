@@ -25,6 +25,13 @@ function LinksCom() {
     return (
         <>
             <div className="links">
+                <div className="waves">
+                    <div className="wave" id="wave1" />
+                    <div className="wave" id="wave2" />
+                    <div className="wave" id="wave3" />
+                    <div className="wave" id="wave4" />
+                </div>
+
                 <div className="container">
                     <div className="footer-brand">
                         <a href="#" className="logo">
